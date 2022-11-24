@@ -1,6 +1,6 @@
 # Warp10 Logger for Home Assistant
 
-This integration platform store all entities states in Warp10 time series.
+This integration platform stores all entity states in [Warp10](https://www.warp10.io/) time series.
 
     
 ## Install
@@ -19,7 +19,7 @@ Edit your *configuration.yaml* file and add the following items:
 
 
 ## Notes
-Some Home Assistant devices doesn't support *device_class* right now. Time series should be named from this. I used the same trick as InfluxDB logger. Each TS use a name forged from its entities units (sensors) or platform.
+Some Home Assistant devices do not support *device_class* right now. Time series should be named from this. I used the same trick as InfluxDB logger. Each TS uses a name forged from its entities units (sensors) or platform.
 
 Here some sensors: 
 
@@ -36,4 +36,4 @@ For anything else:
 
 Some integration platforms (MQTT ie) set a default value to zero for each entity at startup, so you should have some noise in your TS if you restart HA too often.
 
-Configuration check is missing right now, so expect some traceback if you mess the config file.
+The configuration check is missing right now, so expect some tracebacks if you mess the config file.

@@ -38,6 +38,8 @@ class Warp10Logger(object):
         entity_id = event.data.get('entity_id')
         entity_platform = entity_id.split('.')[0]
         new_state =  event.data.get('new_state')
+        if new_state is None:
+            return
         try:
             state_value = float(state_helper.state_as_number(new_state))
         except ValueError:

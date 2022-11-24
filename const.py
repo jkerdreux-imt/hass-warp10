@@ -1,0 +1,5 @@
+DOMAIN='warp10'
+
+CONFIG_URL='url'
+CONFIG_TOKEN='token'
+CONFIG_TOPIC='topic'

@@ -1,6 +1,6 @@
 # Warp10 Logger for Home Assistant
 
-This integration platform stores all entity states in [Warp10](https://www.warp10.io/) time series.
+This integration platform stores all entities states in [Warp10](https://www.warp10.io/) time series.
 
     
 ## Install

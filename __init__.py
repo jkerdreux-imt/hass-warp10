@@ -80,7 +80,7 @@ class Warp10Logger(object):
             try:
                 await session.post(self.cfg[CONFIG_URL], headers={'X-Warp10-Token': self.cfg[CONFIG_TOKEN]}, data=buf)
                 await session.close()
-            except aiohttp.ClientConnectorError:
+            except aiohttp.ClientError:
                 _LOGGER.error("Failed to push data")
 
 

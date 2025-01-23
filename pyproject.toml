@@ -1,0 +1,10 @@
+[tool.ruff]
+line-length = 122
+
+[tool.ruff.format]
+quote-style = "preserve"
+
+[tool.black]
+line-length = 122
+skip-string-normalization = true
+
